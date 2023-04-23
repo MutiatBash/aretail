@@ -47,7 +47,6 @@ hr {
 }
 .text-muted-dollar {
   color: hsl(220, 14%, 75%);
-  text-decoration: line-through;
 }
 .orange-bg {
   background-color: #05bfdb;
@@ -149,11 +148,32 @@ hr {
 }
 /* HOME PAGE */
 .header-wrap {
-  width: 50%;
+  width: 80%;
 }
 .header-img {
   width: 100%;
 }
+.usecase {
+  color: #05bfdb;
+}
+.sisyphus {
+  width: 100%;
+  background-color: #f9fafb;
+}
+.sisyphus-text {
+  width: 60%;
+}
+.width-text,
+width-title {
+  width: 70%;
+}
+.small {
+  font-size: 0.8rem;
+}
+
+/* .boxshadow {
+  box-shadow: 6px 12px 20px #f3fcfd50;
+} */
 @media screen and (max-width: 1200px) {
   #popcart {
     top: 4rem;
