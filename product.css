@@ -167,6 +167,14 @@ hr {
 .usecase {
   color: #05bfdb;
 }
+.header-product {
+  background-image: url("./images/hero-product.png");
+  background-color: gray;
+  height: 120vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .sisyphus {
   /* width: 100%; */
   background-color: #f9fafb;
