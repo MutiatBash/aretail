@@ -181,6 +181,18 @@ hr {
   border: none;
   border-radius: 5px;
 }
+.cyan {
+  background-color: #caf3e5;
+}
+.blue {
+  background-color: #e0eff6;
+}
+.purple {
+  background-color: #eeebff;
+}
+.pink {
+  background-color: #fff4e7;
+}
 /* .sis-width {
   width: 70%;
 }
