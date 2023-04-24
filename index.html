@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="product.css" />
   </head>
   <body>
-    <nav class="navbar navshadow navbar-expand-lg bg-body sticky-top d-flex">
+    <nav class="navbar navbar-expand-lg bg-body sticky-top">
       <div
-        class="boxshadow container-fluid px-lg-3 mx-lg-1 mx-md-4 mx-xl-5 ms-xl-3 pt-1 pb-1"
+        class="container-fluid px-lg-3 mx-lg-1 mx-md-4 mx-xl-5 ms-xl-3 pt-1 pb-1"
       >
         <button
           class="navbar-toggle btn-sm border-0 bg-white d-lg-none"
@@ -27,10 +27,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand me-sm-3 mx-lg-5" href="index.html"
-          ><img src="./images/ar-logo.png" alt=""
+        <a class="navbar-brand me-sm-3 mx-lg-5" href="./index.html"
+          ><img src="../images/ar-logo.png" alt=""
         /></a>
-
+        <div class="imgcart d-lg-none d-sm-block d-xs-block"></div>
         <div
           class="offcanvas offcanvas-start rewidth"
           tabindex="-1"
@@ -44,27 +44,38 @@
               class="btn-close d-lg-none"
               aria-label="Close"
             ></button>
-            <ul class="navbar-nav justify-content-start flex-grow-1 pe-5 px-5">
+            <ul
+              class="navbar-nav justify-content-start flex-grow-1 pe-5 px-5 align-items-lg-center"
+            >
               <li class="nav-item px-3">
                 <a class="nav-link active" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="./product.html">Products</a>
+                <a class="nav-link" href="../product.html">Products</a>
               </li>
               <li class="nav-item px-3">
                 <a class="nav-link" href="#">Pricing</a>
               </li>
+              <!-- <li class="nav-item px-3">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#"></a>
+              </li> -->
             </ul>
+            <div class="d-lg-flex mx-5">
+              <a class="px-3 login align-self-center" href="#">Login</a>
+              <div class="my-3">
+                <button
+                  class="btn orange-bg px-md-3 py-sm-2 btn-lg mt-sm-2 mx-2"
+                >
+                  <a>Sign Up</a>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="flex-row">
-          <a class="fs-6 px-3 login" href="#">Login</a>
-
-          <button class="btn orange-bg px-md-3 py-sm-2 btn-lg mb-2">
-            <a>Sign Up</a>
-          </button>
         </div>
       </div>
     </nav>
@@ -74,33 +85,35 @@
       <section
         class="card header d-flex-column align-items-center justify-content-center mx-lg-5 mx-sm-2 border-0 my-lg-2 mt-lg-4 pt-lg-4 text-center"
       >
-        <h1 class="width-title text-center px-lg-4 ps-lg-5 pe-lg-5 mx-lg-5">
+        <h1
+          class="width-title text-center px-lg-4 ps-lg-5 pe-lg-5 mx-lg-5 pt-4"
+        >
           Experience shopping like never before with our augmented reality (AR)
           technology
         </h1>
-        <p class="width-text py-lg-4 px-lg-5 ps-lg-5 pe-lg-5 mx-lg-5">
+        <p class="width-text py-4 px-lg-5 ps-lg-5 pe-lg-5 mx-lg-5">
           See every product in 3D and know exactly how it will look and feel in
           your home. Shop with confidence and convenience, all thanks to our AR
           technology. Explore our collection today and see the difference for
           yourself
         </p>
-        <button class="btn orange-bg px-md-4 py-sm-3 btn-lg mb-2" type="submit">
-          Shop now
+        <button class="btn orange-bg index px-3 py-4">
+          <a class="nav-link" href="./product.html">Shop now </a>
         </button>
-        <div class="header-wrap pt-lg-5">
+        <div class="header-wrap pt-5">
           <img class="header-img" src="./images/Container.png" alt="" />
         </div>
       </section>
 
       <!-- USE CASES -->
       <section
-        class="card header mx-lg-5 border-0 my-lg-5 mt-lg-5 pt-lg-5 text-center"
+        class="card header mx-lg-5 border-0 my-5 mt-5 pt-lg-5 text-center"
       >
         <h1 class="usecase">Use Cases</h1>
-        <div class="row border-0 mx-auto">
+        <div class="row border-0 mx-auto g-5">
           <div class="card col-sm-4 border-0">
-            <div class="pt-lg-5">
-              <img class="py-2" src="./images/icon1.png" alt="" />
+            <div class="pt-5">
+              <img class="py-3" src="./images/icon1.png" alt="" />
             </div>
             <h6 class="card-title text-center">
               Personalized Shopping Experience
@@ -111,7 +124,7 @@
           </div>
           <div class="card border-0 col-sm-4">
             <div class="pt-lg-5">
-              <img class="py-2" src="./images/icon2.png" alt="" />
+              <img class="py-3" src="./images/icon2.png" alt="" />
             </div>
             <h6 class="card-title text-center">Product Visualization</h6>
             <p class="card-text">
@@ -120,21 +133,21 @@
           </div>
           <div class="card border-0 col-sm-4">
             <div class="pt-lg-5">
-              <img class="text-center py-2" src="./images/icon3.png" alt="" />
+              <img class="text-center py-3" src="./images/icon3.png" alt="" />
             </div>
             <h6 class="card-title text-center">Marketing and Advertising</h6>
             <p class="card-text">Targeted efforts to reach desired audience.</p>
           </div>
           <div class="card border-0 col-sm-6 pt-lg-4">
             <div class="pt-lg-5">
-              <img class="text-center py-2" src="./images/icon4.png" alt="" />
+              <img class="text-center py-3" src="./images/icon4.png" alt="" />
             </div>
             <h6 class="card-title text-center">Marketing and Advertising</h6>
             <p class="card-text">Targeted efforts to reach desired audience.</p>
           </div>
           <div class="card border-0 col-sm-6 pt-lg-4">
             <div class="pt-lg-5">
-              <img class="text-center py-2" src="./images/icon5.png" alt="" />
+              <img class="text-center py-3" src="./images/icon5.png" alt="" />
             </div>
             <h6 class="card-title text-center">Marketing and Advertising</h6>
             <p class="card-text">Targeted efforts to reach desired audience.</p>
@@ -143,15 +156,15 @@
       </section>
       <!-- REVIEW -->
       <section
-        class="header d-flex-column align-items-center justify-content-center sisyphus border-0 my-lg-2 mt-lg-4 py-lg-4 text-center"
+        class="header d-flex-column align-items-center justify-content-center sisyphus border-0 my-2 mt-4 py-3 text-center"
       >
         <div
-          class="py-lg-3 d-flex-column align-items-center justify-content-center"
+          class="py-3 d-flex-column align-items-center justify-content-center"
         >
-          <img class="pt-lg-2" src="./images/Company-logo.png" alt="" />
+          <img class="pt-2" src="./images/Company-logo.png" alt="" />
         </div>
         <div class="mx-lg-5 px-lg-5">
-          <p class="sisyphus-text px-lg-5 mx-lg-5 py-lg-3 text-center">
+          <p class="sisyphus-text px-4 mx-lg-5 py-3 text-center">
             If you're looking for an immersive shopping experience, look no
             further than ARetail with AR capabilities! With just a few clicks,
             you can view products in stunning detail using augmented reality
@@ -175,11 +188,11 @@
         class="card header d-flex-column align-items-center justify-content-center mx-lg-5 border-0 my-lg-2 mt-lg-4 pt-lg-4 text-center"
       >
         <h1
-          class="width-title text-center px-lg-5 ps-lg-5 pe-lg-5 mx-lg-5 text-bolder"
+          class="width-title text-center px-lg-5 ps-lg-5 pe-lg-3 pt-5 mx-lg-5 text-bolder"
         >
           Boost Sales By Showcasing Product in 3D
         </h1>
-        <p class="width-text py-lg-4 px-lg-5 ps-lg-5 pe-lg-5 mx-lg-5">
+        <p class="width-text py-4 px-lg-5 ps-lg-5 pe-lg-5 mx-lg-5">
           Can enhance customers'appreciation and engagement with our product
           ultimately leading to increased sales and customer satisfaction.
         </p>
@@ -250,7 +263,7 @@
           <div class="col-md-6 me-3 mt-sm-0 my-md-3 mx-md-4 mx-lg-0">
             <img
               src="../images/side-img.png"
-              class="img-fluid straight"
+              class="img-fluid straight d-none d-lg-block d-md-block"
               alt="..."
             />
           </div>
@@ -258,19 +271,19 @@
       </div>
       <!-- FAQ -->
       <section
-        class="d-flex-column align-items-center justify-content-center sisyphus border-0 my-lg-2 mt-lg mx-lg-5 py-lg-5 text-center"
+        class="d-flex-column align-items-center justify-content-center sisyphus border-0 my-4 mx-lg-5 py-5 text-center"
       >
         <div>
           <img src="./images/Avatar-group.png" alt="" />
         </div>
-        <div class="py-3 pt-lg-4">
+        <div class="py-3 pt-4">
           <h5 class="text-center p">Got Some Questions?</h5>
-          <p class="text-center text-muted">
+          <p class="text-center text-muted px-3">
             Can't find the answer you're looking for? Please chat to our
             friendly team
           </p>
         </div>
-        <button class="btn orange-bg px-md-4 py-sm-3 btn-lg mb-2" type="submit">
+        <button class="btn orange-bg px-4 py-3 mt-3" type="submit">
           Get in touch
         </button>
       </section>
@@ -278,7 +291,9 @@
     <!-- FOOTER -->
     <section class="container">
       <footer>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+        <div
+          class="row row-cols-2 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top mx-auto"
+        >
           <div class="col mb-2">
             <h6>Product</h6>
             <ul class="nav flex-column">
@@ -398,7 +413,7 @@
           <a class="nav col-md-4 justify-content-start d-flex" href="#"
             ><img src="./images/ar-logo.png" alt=""
           /></a>
-          <p>
+          <p class="text-muted">
             © 2023 I4G x swiftXR Challenge, Team Hybrid. All rights reserved.
           </p>
         </div>

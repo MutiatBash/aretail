@@ -44,7 +44,11 @@ hr {
 }
 .login {
   text-decoration: none;
-  color: black;
+  color: #878787;
+}
+.login:hover {
+  color: #05bfdb;
+  font-weight: bold;
 }
 .nav-items {
   font-size: 14px;
@@ -53,7 +57,8 @@ hr {
   color: #05bfdb;
 }
 .content {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: hsl(220, 9%, 45%);
 }
 .text-muted-dollar {
@@ -142,6 +147,18 @@ hr {
 .bold {
   font-weight: 700;
 }
+.img-fluid {
+  /* width: 88%;
+  align-self: flex-end; */
+  max-height: 58%;
+}
+/*image-width {
+  width: 50%;
+} */
+.text-small {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 .cartdeets {
   display: flex;
   justify-content: space-between;
@@ -161,11 +178,26 @@ hr {
 .header-wrap {
   width: 80%;
 }
+.product-card {
+  margin: 0 auto;
+}
 .header-img {
   width: 100%;
 }
 .usecase {
   color: #05bfdb;
+}
+/* .card-title {
+  font-size: 0.98rem;
+} */
+.card-text {
+  font-size: 0.9rem;
+}
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: #1b1a1a;
 }
 .header-product {
   background-image: url("./images/hero-product.png");
@@ -183,6 +215,12 @@ hr {
 }
 .cyan {
   background-color: #caf3e5;
+}
+.vector {
+  width: 20%;
+}
+.game-text {
+  width: 80%;
 }
 .blue {
   background-color: #e0eff6;
@@ -263,5 +301,60 @@ width-title {
   }
   .cartdeets p {
     font-size: 0.9rem;
+  }
+  .reverse,
+  .row-cyan {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.8rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #caf3e5;
+  }
+  .text-small {
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .cyan-card {
+    margin: 0 1rem;
+  }
+  .product-card {
+    margin: 0.8rem 1.6rem;
+  }
+  .content {
+    font-size: 0.88rem;
+  }
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .ratings {
+    width: 50%;
+  }
+  .vector {
+    width: 20%;
+  }
+  .width-text {
+    width: 85%;
+  }
+  .width-title {
+    width: 95%;
+    font-size: 1.7rem;
+  }
+  .orange-bg.index {
+    width: 80%;
+  }
+  .btn.orange-bg.index a.nav-link {
+    font-size: 1rem;
+  }
+  .sisyphus-text {
+    font-size: 0.9rem;
+  }
+  .enhance {
+    text-align: center;
+    margin: 2rem 1.5rem 1.1rem 1.5rem;
   }
 }
