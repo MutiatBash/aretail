@@ -50,8 +50,8 @@ hr {
   color: #05bfdb;
   font-weight: bold;
 }
-.nav-items {
-  font-size: 16px;
+.nav-items .nav-link {
+  font-size: 15px;
 }
 .nav-items:hover a.nav-link {
   color: #05bfdb;
