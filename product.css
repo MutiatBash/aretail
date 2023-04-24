@@ -350,6 +350,9 @@ h3 {
   .btn.orange-bg.index a.nav-link {
     font-size: 1rem;
   }
+  .nav-link {
+    font-size: 0.9rem;
+  }
   .sisyphus-text {
     font-size: 0.9rem;
   }
