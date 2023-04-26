@@ -5,11 +5,13 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-.orange {
+/* style"max-width: 100%; animation: 2s ease-in-out infinite"
+                ; */
+/* .blue {
   color: #05bfdb;
   font-size: 0.7rem;
   font-weight: 700;
-}
+} */
 hr {
   margin: 0;
 }
@@ -64,18 +66,22 @@ hr {
 .text-muted-dollar {
   color: hsl(220, 14%, 75%);
 }
-.orange-bg {
+.blue-bg {
   background-color: #05bfdb;
   color: white;
   text-align: center;
   font-size: 0.8rem;
-  box-shadow: 6px 12px 20px #f3fcfd50;
+  box-shadow: 4px 10px 20px #afb1b125;
   font-weight: 600;
+  transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
-.orange-bg:hover {
-  background-color: #05bfdb;
+.blue-bg:hover {
+  /* background-color: white; */
   color: white;
+  background-color: #03aec9;
+  /* border: 1px solid #05bfdb; */
+  transform: scale(1.1);
 }
 .dollar {
   font-weight: 700;
@@ -89,9 +95,6 @@ hr {
   border: 2px solid #05bfdb;
   opacity: 50%;
 }
-/* #md {
-  position: relative;
-} */
 #popcart {
   background-color: white;
   position: fixed;
@@ -174,7 +177,8 @@ hr {
   background-color: white;
   border: 1px solid #05bfdb;
 }
-/* HOME PAGE */
+
+/* HOME PAGE  STYLING*/
 .header-wrap {
   width: 80%;
 }
@@ -245,9 +249,122 @@ h3 {
   font-size: 0.8rem;
 }
 
-/* .boxshadow {
-  box-shadow: 6px 12px 20px #f3fcfd50;
+/* ANIMATIONS */
+.header-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fade-up s ease-out, slide-up 2s ease-out 0s;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade-up 2s ease-out forwards;
+}
+
+.slide-in-left,
+.slide-in-right {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slide-in-left {
+  animation: slide-up 1.5s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slide-up 1.5s ease-in forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fade-up {
+  to {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes slide-up {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slide-left {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slide-right {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* .product-img {
+  animation: zoom-in 3s ease-in-out;
+}
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(2);
+  }
 } */
+.gif {
+  max-width: 100%;
+  animation: bounce 2s ease-in-out infinite;
+}
+/* .fade-down {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.fade-down.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes fade-down-animation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+/* @keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+} */
+
+/* ANIMATION FOR GIFS */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ANIMATIONS FOR TEXT HEADER */
+/* @keyframes fade-down-animation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+/* MEDIA RESPONSIVENESS FOR SCREEN SIZE 1024PX */
 @media screen and (max-width: 1200px) {
   #popcart {
     top: 4rem;
@@ -344,10 +461,10 @@ h3 {
     width: 95%;
     font-size: 1.7rem;
   }
-  .orange-bg.index {
+  .blue-bg.index {
     width: 80%;
   }
-  .btn.orange-bg.index a.nav-link {
+  .btn.blue-bg.index a.nav-link {
     font-size: 1rem;
   }
   .nav-link {
